@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loja de Canecas</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+    header video {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .categorias {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .categoria {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      cursor: pointer;
+      text-align: center;
+    }
+    .categoria:hover {
+      transform: scale(1.03);
+    }
+    .categoria img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .categoria h3 {
+      padding: 15px;
+      font-size: 1.2em;
+      color: #333;
+    }
+    footer {
+      padding: 40px 20px;
+      background-color: #fff;
+      text-align: center;
+    }
+    .footer-video {
+      width: 300px;
+      height: 300px;
+      margin: 0 auto 20px;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .contato {
+      font-size: 1em;
+      color: #333;
+    }
+    .contato p {
+      margin: 5px 0;
+    }
+    .contato a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    .contato a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <video autoplay muted loop>
+      <source src="video/banner.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo HTML5.
+    </video>
+  </header>
+
+  <main class="categorias">
+    <a class="categoria" href="caneca-branca.html">
+      <img src="img/caneca-branca.jpg" alt="Caneca Branca" />
+      <h3>Caneca Branca</h3>
+    </a>
+    <a class="categoria" href="caneca-aluminio.html">
+      <img src="img/caneca-aluminio.jpg" alt="Caneca de Alumínio" />
+      <h3>Caneca de Alumínio</h3>
+    </a>
+    <a class="categoria" href="caneca-colorida.html">
+      <img src="img/caneca-colorida.jpg" alt="Caneca Colorida" />
+      <h3>Caneca Colorida</h3>
+    </a>
+    <a class="categoria" href="canecas-prontas.html">
+      <img src="img/canecas-prontas.jpg" alt="Canecas Prontas" />
+      <h3>Canecas Prontas</h3>
+    </a>
+    <a class="categoria" href="outros.html">
+      <img src="img/outros.jpg" alt="Outros Produtos" />
+      <h3>Outros</h3>
+    </a>
+  </main>
+
+  <footer>
+    <div class="footer-video">
+      <video autoplay muted loop width="300" height="300">
+        <source src="video/final.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo HTML5.
+      </video>
+    </div>
+    <div class="contato">
+      <p>WhatsApp: <a href="https://wa.me/16994066473">(16) 99406-6473</a></p>
+      <p>Instagram: <a href="https://instagram.com/rk.perso" target="_blank">@rk.perso</a></p>
+    </div>
+  </footer>
+</body>
+</html>

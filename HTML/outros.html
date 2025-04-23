@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Outros Produtos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #333;
+    }
+    .produtos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 40px;
+      justify-content: center;
+    }
+    .produto {
+      background: white;
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .produto img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .produto h3 {
+      margin: 15px 0 5px;
+      font-size: 1.1em;
+    }
+    .produto p {
+      padding: 0 10px;
+      color: #666;
+      font-size: 0.9em;
+    }
+    .produto .preco {
+      color: green;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .produto a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .produto a:hover {
+      background-color: #1ebc57;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Outros Produtos</h1>
+  </header>
+
+  <section class="produtos">
+    <div class="produto">
+      <img src="img/caneca-outros1.jpg" alt="Caneca Personalizada com Tema">
+      <h3>Caneca Personalizada</h3>
+      <p>Com seu nome, logo ou frase favorita.</p>
+      <div class="preco">R$ 34,90</div>
+      <a href="https://wa.me/16994066473">Comprar no Whats</a>
+    </div>
+    <div class="produto">
+      <img src="img/caneca-outros2.jpg" alt="Caneca Colorida">
+      <h3>Caneca Colorida</h3>
+      <p>Vibrante e cheia de estilo. Várias cores disponíveis.</p>
+      <div class="preco">R$ 27,90</div>
+      <a href="https://wa.me/16994066473">Comprar no Whats</a>
+    </div>
+    <div class="produto">
+      <img src="img/caneca-outros3.jpg" alt="Caneca Premium">
+      <h3>Caneca Premium</h3>
+      <p>Material de alta qualidade, ideal para presentes especiais.</p>
+      <div class="preco">R$ 49,90</div>
+      <a href="https://wa.me/16994066473">Comprar no Whats</a>
+    </div>
+  </section>
+</body>
+</html>
